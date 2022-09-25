@@ -17,6 +17,9 @@ footer {
 .textEditor {
   height: 80vh;
   background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -45,3 +48,39 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+span,
+.textBox {
+  border: .5px solid grey;
+  border-radius: 4px;
+}
+
+span {
+  display: inline;
+  padding: 10px 30px;
+  margin: 4px 8px;
+}
+
+.textBox {
+  margin: 4px 0;
+  width: 950px;
+  background-color: transparent;
+  height: 70vh;
+  outline: none;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+nav {
+  margin: 10px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline;
+}
+
